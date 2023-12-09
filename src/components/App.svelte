@@ -83,7 +83,7 @@
 		</Hideable>
 	</section>
 
-	<section>
+	<!-- <section>
 		<Hideable>
 			<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
 			<hr />
@@ -92,7 +92,7 @@
 				<Work {...exp} />
 			{/each}
 		</Hideable>
-	</section>
+	</section> -->
 
 	<section>
 		<Hideable>
@@ -104,7 +104,9 @@
 					<Hideable hide={project.hide}>
 						<li>
 							<strong>{project.name}</strong>
-							- {project.details}
+							- <i>{project.techs.join(', ')}</i>
+							<br />
+							{project.details}
 							<a href="https://{project.url}" target="_blank" rel="noreferrer"
 								><strong>{project.url}</strong></a
 							>
@@ -114,7 +116,22 @@
 			</ul>
 		</Hideable>
 	</section>
+	<section>
+		<Hideable>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Awards and Activities</h2>
+			<hr />
 
+			<ul class="text-left list-disc pl-8">
+				{#each interests as interest}
+					<Hideable>
+						<li>
+							{interest}
+						</li>
+					</Hideable>
+				{/each}
+			</ul>
+		</Hideable>
+	</section>
 	<section>
 		<Hideable>
 			<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
