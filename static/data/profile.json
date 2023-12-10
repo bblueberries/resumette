@@ -115,7 +115,7 @@
 		"Exercise (running ,weight training)"
 	],
 	"resumeUrl": {
-		"sourceLink": "",
-		"fullVersion": ""
+		"sourceLink": "https://github.com/bblueberries/resumette",
+		"fullVersion": "https://resumette-bblueberries.vercel.app"
 	}
 }
