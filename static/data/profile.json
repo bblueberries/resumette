@@ -2,12 +2,12 @@
 	"intro": {
 		"name": "Atsawin Sungsuwan",
 		"nickname": "Ultra",
-		"phone": "",
+		"phone": "0620407700",
 		"email": "Atsawin.ssw@gmail.com",
 		"github": "bblueberries",
 		"linkedin": "",
 		"location": "Bangkok, Thailand",
-		"website": ""
+		"website": "bblueberries.vercel.app"
 	},
 	"projects": [
 		{
@@ -91,11 +91,23 @@
 			"details": "Vercel , Cloudinary ,VScode"
 		}
 	],
-	"workExperiences": [],
+	"activities": [
+		{
+			"name": "Thailand Computer Olympiad Camp(2018-2021)",
+			"details": " a Camp for learning for competitive programming and algorithm using C and C++ as known as POSN camp",
+			"award": "Winning Bronze medal in 17th Thailand Olympiad in Informatics(TOI17th 2021)"
+		}
+	],
 	"educations": [
 		{
 			"head": "B.Eng. Computer Engineering",
-			"details": "Chulalongkorn University, TH. 2022-Present (Expected May 2026)"
+			"details": "Chulalongkorn University, TH. 2022-Present (Expected May 2026)",
+			"courses": [
+				"Basic Computer Programming",
+				"Data Structure",
+				"Object-oriented programming (OOP)",
+				"Algorithm(Ongoing)"
+			]
 		}
 	],
 	"interests": [

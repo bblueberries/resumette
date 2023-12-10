@@ -13,9 +13,9 @@
 		intro = {} as IProfileResp['intro'],
 		projects = [],
 		technologies = [],
-		workExperiences = [],
 		educations = [],
 		interests = [],
+		activities = [],
 		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
 	} = profile || {});
 
@@ -43,7 +43,7 @@
 	</p>
 	<p>You can click at any sections or lines hide some information before printing.</p>
 	<a href={sourceLink} target="_blank" rel="noopener">[Source]</a>
-	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
+	<!-- <a href={dataLink} target="_blank" rel="noopener">[Data]</a> -->
 </header>
 
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
@@ -62,6 +62,8 @@
 						</li>
 					</Hideable>
 				{/each}
+				<br />
+				...and is always open for any technologies
 			</ul>
 		</Hideable>
 	</section>
@@ -76,6 +78,8 @@
 					<Hideable>
 						<li>
 							<strong>{edu.head}</strong>, {edu.details}
+							<br />
+							Courses:&nbsp;{edu.courses.join(', ')}
 						</li>
 					</Hideable>
 				{/each}
@@ -122,10 +126,13 @@
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
-				{#each interests as interest}
+				{#each activities as activity}
 					<Hideable>
 						<li>
-							{interest}
+							<strong>{activity.name},&nbsp;</strong>
+
+							{activity.details}<br />
+							&nbsp;-&nbsp;{activity.award}
 						</li>
 					</Hideable>
 				{/each}
@@ -164,12 +171,17 @@
 		text-decoration: underline;
 	}
 
+	li {
+		margin-bottom: 4px;
+	}
+
 	section {
 		@apply my-4;
 	}
 
 	section h2 {
 		@apply font-semibold;
+		margin-bottom: 2px;
 	}
 
 	section hr {
