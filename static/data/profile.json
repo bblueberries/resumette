@@ -53,7 +53,7 @@
 		{
 			"name": "The Ghost Buster",
 			"techs": ["Java ", "JavaFX "],
-			"details": "a 2D game project that we have to tag the ghosts to make them disappear inspired by a tag game",
+			"details": "a 2D game project that we have to tag the ghosts to make them disappear inspired by a tag game and Pac-man",
 			"url": "github.com/bblueberries/2Dgame",
 			"hide": false
 		},
