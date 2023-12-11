@@ -98,6 +98,12 @@
 			"award": "Winning Bronze medal in 17th Thailand Olympiad in Informatics(TOI17th 2021)"
 		}
 	],
+	"certificates": [
+		{
+			"name": "543/677 TOEFL ITP(2021)",
+			"details": "English proficiency test for academic placement, covering listening, reading, and structure. the score can compared to CEFR B2 level means understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in their field of specialisation"
+		}
+	],
 	"educations": [
 		{
 			"head": "B.Eng. Computer Engineering",

@@ -16,6 +16,7 @@
 		educations = [],
 		interests = [],
 		activities = [],
+		certificates = [],
 		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
 	} = profile || {});
 
@@ -133,6 +134,24 @@
 
 							{activity.details}<br />
 							&nbsp;-&nbsp;{activity.award}
+						</li>
+					</Hideable>
+				{/each}
+			</ul>
+		</Hideable>
+	</section>
+	<section>
+		<Hideable>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Certificates</h2>
+			<hr />
+
+			<ul class="text-left list-disc pl-8">
+				{#each certificates as certificate}
+					<Hideable>
+						<li>
+							<strong>{certificate.name},&nbsp;</strong>
+
+							{certificate.details}<br />
 						</li>
 					</Hideable>
 				{/each}
