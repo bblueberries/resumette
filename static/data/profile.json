@@ -38,7 +38,7 @@
 		{
 			"name": "BannJo group announcement",
 			"techs": ["Typescript ", "React ", "NextJS ", "Tailwind"],
-			"details": "announce freshmen' BaanJo subgroup of Chula's rubpeunkaomai2023 (responsible for Groupshowing page), fill a studentId and the page will show your group",
+			"details": "announce freshmen' BaanJo(Chula's rubpeunkaomai2023) subgroup, fill a studentId and the website will show your group(responsible for Groupshowing page)",
 			"url": "github.com/BaanJo-Chula/group-annoucement",
 			"hide": false
 		},
